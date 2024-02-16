@@ -8,9 +8,9 @@
 
 ## Features
 
-- **Prevent Opening in Browser**: Automatically intercepts attempts to open Google Slides in the browser and initiates a download instead.
+-   **Prevent Opening in Browser**: Automatically intercepts attempts to open Google Slides in the browser and initiates a download instead.
 
-- **Maintain File Integrity**: Ensures that Microsoft PowerPoint files are downloaded without any conversion, preserving the original file's features and integrity.
+-   **Maintain File Integrity**: Ensures that Microsoft PowerPoint files are downloaded without any conversion, preserving the original file's features and integrity.
 
 ## Installing the Extension on Chrome/Brave
 

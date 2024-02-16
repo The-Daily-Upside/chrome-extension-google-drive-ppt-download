@@ -1,0 +1,31 @@
+{
+    "name": "chrome-extension-campaign-monitor-helper",
+    "version": "1.0.0",
+    "private": true,
+    "description": "A The Daily Upside extension that unchecks the Move CSS inline option when importing HTML into a campaign.",
+    "scripts": {
+        "prettier": "npx prettier **/*.{md,html,json} -w",
+        "lint": "eslint **/*.js",
+        "lint:fix": "npm run lint -- --fix",
+        "start": "npx prettier **/*.{md,json} -w && npx eslint **/*.js --fix && npm run lint --fix"
+    },
+    "keywords": [],
+    "author": "The Daily Upside",
+    "devDependencies": {
+        "eslint": "8.34.0",
+        "eslint-config-prettier": "8.6.0",
+        "eslint-plugin-import": "2.27.5",
+        "eslint-plugin-jest": "^27.4.2",
+        "eslint-plugin-prettier": "4.2.1",
+        "lint-staged": "13.1.2",
+        "prettier": "2.8.4"
+    },
+    "lint-staged": {
+        "**/*.js": [
+            "npx eslint --fix"
+        ],
+        "**/*.{md,html,json}": [
+            "npx prettier --write"
+        ]
+    }
+}
