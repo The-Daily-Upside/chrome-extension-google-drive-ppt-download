@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Disallow Opening Google Slides",
+    "version": "1.0.0",
+    "description": "A minimal extension to prevent opening files in Google Drive.",
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["tabs", "storage"],
+    "short_name": "Disallow Opening Google Slides"
+  }
