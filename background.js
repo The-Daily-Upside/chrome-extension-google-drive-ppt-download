@@ -29,14 +29,13 @@ const checkForBlockedLinks = async (tabId, tabUrl) => {
     // Extracting doc ID using regex
     const documentIdMatch = tabUrl.match(regexPattern);
 
-    console.log(documentIdMatch);
     if (documentIdMatch && documentIdMatch[1]) {
         // Create export download link of the same doc.
         const downloadUrl = `https://docs.google.com/uc?export=download&id=${documentIdMatch[1]}`;
 
         /// Avoid opening the same download URL in multiple tabs.
-        if (!openedTabs[downloadUrl]) {
-            openedTabs[downloadUrl] = true;
+        if (!openedTabs[downloadUrl + tabId]) {
+            openedTabs[downloadUrl + tabId] = true;
 
             try {
                 await removeTab(tabId);
