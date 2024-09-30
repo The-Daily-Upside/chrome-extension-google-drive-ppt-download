@@ -28,7 +28,9 @@ To use the extension on your Chrome or Brave browser, follow these simple steps:
 
 ## How it Works
 
-The extension intercepts requests to open Google Slides in the browser by leveraging the background service worker (`background.js`). Instead of opening the file online, it initiates a download, ensuring that the original Microsoft PowerPoint file is preserved.
+The extension uses Chrome's **Declarative Net Request** API to intercept attempts to open Google Slides presentations in the browser. Instead of loading the file in the browser (which could potentially alter its formatting or other features), the extension redirects the user to a custom page that informs them that the file has been blocked from opening.
+
+Additionally, the extension stores the blocked Google Slides URL and displays it on the custom block page, allowing the user to know which file they attempted to open. The extension ensures that any attempt to open a Google Slides presentation is handled securely, preserving the integrity of the original file.
 
 ## Local Development Setup
 
