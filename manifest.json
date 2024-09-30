@@ -8,9 +8,31 @@
         "48": "icon.png",
         "128": "icon.png"
     },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "tabs",
+        "storage",
+        "webNavigation"
+    ],
+    "host_permissions": ["*://docs.google.com/*"],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["tabs", "storage"],
+    "web_accessible_resources": [
+        {
+            "resources": ["blocked.html", "blocked.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
     "short_name": "Disallow Opening Google Slides"
 }

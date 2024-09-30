@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocked</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #0a0a0a;
+        }
+        h1 span {
+            color: red;
+        }
+        #url {
+            display: flex;
+            justify-content: center;
+        }
+        #url a {
+            background-color: #064E37;
+            font-weight: bold;
+            font-size: .8125rem;
+            letter-spacing: .02438rem;
+            padding: .62rem .75rem;
+            display: flex;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 1rem;
+            width: fit-content;
+            align-items: center;
+            justify-content: center;
+        }
+        .copyright {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .copyright a {
+            text-decoration: none;
+            color: #008A37;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Slides is <span>blocked!</span></h1>
+    <p>You tried to open the slide in the browser!</p>
+    <p>Please download the document instead.</p>
+    <p id="url">Creating Download Link ...</p>
+
+    <div class="copyright"><a href="https://www.thedailyupside.com/">Powered by <strong>The Daily Upside</strong></a> | <a href="https://github.com/The-Daily-Upside/chrome-extension-google-drive-ppt-download">GitHub</a></div>
+    <script src="blocked.js"></script>
+</body>
+</html>
