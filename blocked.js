@@ -20,7 +20,7 @@ chrome.storage.local.get('blockedUrl', function (result) {
 
         // Create "Exclude URL" button
         const excludeButton = document.createElement('button');
-        excludeButton.textContent = 'Allow this one';
+        excludeButton.textContent = 'Allow Opening';
         excludeButton.onclick = function () {
             // Define new rules array with the blocked URL
             const newRules = [
