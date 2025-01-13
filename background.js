@@ -2,7 +2,7 @@ chrome.webNavigation.onBeforeNavigate.addListener(
     function (details) {
         const url = details.url;
         if (url.includes('https://docs.google.com/presentation/')) {
-            // Store the blocked URL in chrome.storage
+            // Store the URL to display on the blocked page
             chrome.storage.local.set({ blockedUrl: url });
         }
     },
