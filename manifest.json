@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Disallow Opening Google Slides",
     "version": "2.1.0",
-    "description": "A minimal extension to prevent opening files in Google Drive.",
+    "description": "Prevent Google Slides from opening in the browser and download them instead. Made by The Daily Upside.",
     "icons": {
         "16": "icon.png",
         "48": "icon.png",
@@ -34,5 +34,8 @@
             "matches": ["<all_urls>"]
         }
     ],
-    "short_name": "Disallow Opening Google Slides"
+    "short_name": "Block Google Slides",
+    "homepage_url": "https://www.thedailyupside.com",
+    "author": "The Daily Upside",
+    "support_url": "https://www.thedailyupside.com/contact"
 }

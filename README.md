@@ -4,12 +4,11 @@
 
 ## Overview
 
-**Disallow Opening Google Slides** is a browser extension designed to prevent the opening of Google Slides in the browser and instead download the file. This extension was developed to address issues where Google's conversion of Microsoft PowerPoint files might lead to the corruption of some features.
+**Disallow Opening Google Slides** is a browser extension designed to prevent the opening of Google Slides in the browser and instead download the file. This extension was developed by [The Daily Upside](https://www.thedailyupside.com) to address issues where Google's conversion of Microsoft PowerPoint files might lead to the corruption of some features.
 
 ## Features
 
 -   **Prevent Opening in Browser**: Automatically intercepts attempts to open Google Slides in the browser and initiates a download instead.
-
 -   **Maintain File Integrity**: Ensures that Microsoft PowerPoint files are downloaded without any conversion, preserving the original file's features and integrity.
 
 ## Installing the Extension on Chrome/Brave
@@ -61,8 +60,33 @@ To set up the extension locally for development purposes, follow these steps:
 
 This will run Prettier to format relevant files and ESLint for linting, ensuring the codebase adheres to coding standards.
 
+## Publishing to Chrome Web Store
+
+To publish this extension:
+
+1. Zip the following files:
+    - `manifest.json`
+    - `background.js`
+    - `blocked.html`
+    - `blocked.js`
+    - `rules.json`
+    - `icon.png`
+
+2. Go to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/).
+
+3. Upload the zip file and fill in the required details, including:
+    - Title: Disallow Opening Google Slides
+    - Description: Prevent Google Slides from opening in the browser and download them instead. Made by The Daily Upside.
+    - Screenshots: Add screenshots of the extension in action.
+
+4. Submit for review.
+
 ## Important Note
 
 This extension is specifically tailored for Google Slides and may not be suitable for use with other document types.
 
 Feel free to contribute, report issues, or suggest improvements. Happy coding!
+
+---
+
+**Made by [The Daily Upside](https://www.thedailyupside.com).**
