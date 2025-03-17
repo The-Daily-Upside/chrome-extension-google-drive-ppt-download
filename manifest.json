@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Disallow Opening Google Slides",
-    "version": "2.1.0",
+    "version": "2.1.2",
     "description": "Prevent Google Slides from opening in the browser and download them instead. Made by The Daily Upside.",
     "icons": {
         "16": "icon.png",
@@ -10,12 +10,10 @@
     },
     "permissions": [
         "declarativeNetRequest",
-        "declarativeNetRequestWithHostAccess",
-        "tabs",
         "storage",
         "webNavigation"
     ],
-    "host_permissions": ["*://docs.google.com/*"],
+    "host_permissions": ["https://docs.google.com/presentation/*"],
     "declarative_net_request": {
         "rule_resources": [
             {
@@ -36,6 +34,5 @@
     ],
     "short_name": "Block Google Slides",
     "homepage_url": "https://www.thedailyupside.com",
-    "author": "The Daily Upside",
-    "support_url": "https://www.thedailyupside.com/contact"
+    "author": "The Daily Upside"
 }
